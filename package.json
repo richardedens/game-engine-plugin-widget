@@ -1,0 +1,44 @@
+{
+  "name": "snesemulatormx8",
+  "widgetName": "Snesemulator",
+  "version": "1.0.0",
+  "description": "The SNES emulator plugin widget.",
+  "copyright": "CED 2019",
+  "author": "Gerhard Richard Edens",
+  "config": {
+    "widgetPath": "../../widgets",
+    "projectPath": "../../",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "ced",
+  "scripts": {
+    "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
+    "dev": "pluggable-widgets-tools start:ts",
+    "build": "pluggable-widgets-tools build:ts",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.0.0",
+    "@types/big.js": "^4.0.5",
+    "@types/classnames": "^2.2.4",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.7.2",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/socket.io": "^2.1.2",
+    "@types/socket.io-client": "^1.4.32"
+  },
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "classnames": "^2.2.6",
+    "safe-eval": "^0.4.1",
+    "socket.io": "^2.2.0",
+    "three": "^0.107.0"
+  }
+}
