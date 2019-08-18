@@ -5,7 +5,7 @@
             <widgetFile path="Snesemulator.xml"/>
         </widgetFiles>
         <files>
-            <file path="ced/snesemulator"/>
+            <file path="mangoict/snesemulator"/>
         </files>
     </clientModule>
 </package>

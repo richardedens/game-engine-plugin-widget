@@ -11,7 +11,7 @@
     "mendixHost": "http://localhost:8080",
     "developmentPort": "3000"
   },
-  "packagePath": "ced",
+  "packagePath": "mangoict",
   "scripts": {
     "start": "concurrently \"pluggable-widgets-tools start:server --open\" \"npm:dev\"",
     "dev": "pluggable-widgets-tools start:ts",
